@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inter;
+  margin: auto;
+  max-height: 100vw;
+  height: 100vh;
+  background-color: rgba(102, 102, 102, 0.286);
+}
+
+header {
+  position: relative;
+  background-color: #ff6b1a;
+  color: #ffffff;
+}
+
+.header-content {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 130px;
+  min-width: 375px;
+}
+nav {
+  display: none;
+}
+
+.header-content h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 39px 71px 0px 76px;
+}
+
+.header-content p {
+  margin: 5px 40px 40px 45px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.path-logo img {
+  width: 24px;
+  height: 20px;
+  position: absolute;
+  top: 42px;
+  left: 40px;
+}
+
+.menu-content {
+  max-width: 100%;
+  height: 71px;
+  background-color: #1a1a1a;
+}
+
+.top,
+.middle,
+.bot {
+  width: 17px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 13px;
+  bottom: 17px;
+  width: 103px;
+  height: 37px;
+  background-color: #ff6b1a;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 10px;
+}
+
+.menu p {
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+.hero-section {
+  position: relative;
+  color: #ffffffdd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 377px;
+  width: 100vw;
+  background-color: #2a2a2a;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 151px;
+  height: 127px;
+}
+
+.path-max {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+}
+
+.hero-section h2 {
+  margin: auto 67px 15px 66px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.hero-section p {
+  margin-bottom: auto;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-wrapper {
+  justify-content: space-around;
+  background-color: #ffffff;
+  height: 1549px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.card-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 32px;
+}
+
+.Rasengan,
+.Chidori,
+.fireball-jutsu,
+.Shadow-clone,
+.sharingan,
+.water-dragon {
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  text-align: left;
+  width: 324px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: #2a2a2a2e 1px 5px 10px 2px;
+  border-top: #ff6b1a solid;
+  color: #666666;
+  position: relative;
+  transition:
+    0.3s ease,
+    transform 0.3s;
+}
+
+.Rasengan:hover,
+.Chidori:hover,
+.fireball-jutsu:hover,
+.Shadow-clone:hover,
+.sharingan:hover,
+.water-dragon:hover {
+  transform: translatey(-5px);
+  box-shadow: #ff6b1a 0px 0px 25px 1px;
+}
+
+.Rasengan {
+  margin-top: 39px;
+}
+
+.card-wrapper img {
+  position: absolute;
+  top: 37px;
+  left: 25px;
+}
+
+.card-wrapper h2 {
+  position: absolute;
+  left: 60px;
+  top: 37px;
+}
+
+.card-wrapper p {
+  position: absolute;
+  top: 76px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero-section p {
+    margin-bottom: auto;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .header-content {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-content h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 39px 71px 0px 76px;
+    position: relative;
+  }
+  .path-logo img {
+    width: 57.86px;
+    height: 48.65px;
+    position: absolute;
+    top: 4rem;
+    left: 15rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .large-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .large-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  .menu-content {
+    height: 60px;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .Rasengan,
+  .Chidori,
+  .fireball-jutsu,
+  .Shadow-clone,
+  .sharingan,
+  .water-dragon {
+    width: 324px;
+    margin: 0;
+    height: 200px;
+    transition:
+      0.3s,
+      transform 0.3s;
+  }
+  .Rasengan:hover,
+  .Chidori:hover,
+  .fireball-jutsu:hover,
+  .Shadow-clone:hover,
+  .sharingan:hover,
+  .water-dragon:hover {
+    transform: translatey(-5px);
+    box-shadow: #ff6b1a 0px 0px 25px 1px;
+  }
+
+  .large-menu li {
+    width: 103px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .large-menu li:hover {
+    background-color: #ff6b1a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 107, 26, 0.4);
+    border-radius: 8px;
+  }
+}
