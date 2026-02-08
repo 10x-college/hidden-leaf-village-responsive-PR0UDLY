@@ -30,6 +30,12 @@ header {
   height: 130px;
   min-width: 375px;
 }
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
 nav {
   display: none;
 }
@@ -220,7 +226,7 @@ footer {
   align-items: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .hero-section p {
     margin-bottom: auto;
     line-height: 30px;
@@ -233,6 +239,12 @@ footer {
     flex-wrap: wrap;
   }
 
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
   .header-content h2 {
     font-weight: 600;
     font-size: 40px;
@@ -243,8 +255,7 @@ footer {
     width: 57.86px;
     height: 48.65px;
     position: absolute;
-    top: 4rem;
-    left: 15rem;
+    top: 2.5rem;
   }
 
   .menu {
